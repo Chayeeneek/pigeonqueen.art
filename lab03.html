@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"> this isa p element with id = "demo".</p>
+        <p>Click the button to change the text of the p element</p>
+        <button onclick="myFunction()"> Try it</button>
+        
+        <h2 class="example"> A heading with class example </h2>
+        <p class ="example"> A paragraf with class example </p>
+        <p>Click the button to add a background colr to the first element in the document with class="example"</p>   
+        <button onclick="myFaction()">Try it</button>
+
+       
+       <script>
+           function myFunction() {
+               document.querySelector("#demo").innerHTML = "hello world";
+           }
+
+           function myFaction() {
+               document.querySelector(".example").style.backgroundColor = "red";
+           }
+       </script> 
+    </body>
+</html>

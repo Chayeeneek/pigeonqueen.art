@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            a[target]{
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <p>the css selector a [target] makes sure that all links with a target attribute gets a yellow background:</p>
+        <a href = "https://www.w3schools.com">w3schools </a> 
+        <a href = "https://www.disney.com" target="_blank"> disney </a> 
+        <a href = "https://www.wikipedia.org" target="_top">wikipedia </a>
+        <p>Click this button to add a red border to the irst link that has a target attribute</p> 
+        
+        <button onclick="myFunction()"> Try it</button>
+
+        <script>
+            function myFunction(){
+                document.querySelector("a[target]").style.border = "10px solid red";
+            }
+        </script>
+    </body>
+</html>
