@@ -2,36 +2,40 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title> add game</title>
+        <title> LOTERIA</title>
         <meta name="description" content="Addition game w/ js">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="loteria.css"> 
 
     </head>
     <body>
+        <header>
+            <a href="#" class="logo">Loteria</a>
+        </header>
         <div id="wrapper">
             <table width="400" height="300" text-align="center">
                 <tr>
                     <td>
-                        <input id="btn1" type="button" value="wylosuj pierwsze"></input>
+                       
+                        <input type="button" id="randomizebutton1" value="Wylosuj Pierwsze!">
                     </td>
                     <td>
-                        <div id="number1" style="font-size:45px; font-weight:bold; border:5px solid green; padding: 50px;">1</div>
+                        <input type="text" id="number1" name="number1" style="padding:10px; border:2px solid #14d2d5;">
                     </td>
                     <td>
                         <div style="font-size:45px; font-weight: bold;"> +</div>
                     </td>
                     <td>
-                        <input id="btn2" type="button" value="wylosuj drugie"></input>
+                        <input type="button" id="randomizebutton2" value="Wylosuj Drugie!" />
                     </td>
                     <td>
-                        <div id="number2" style="font-size:45px; font-weight:bold; border:5px solid green; padding: 50px;">2</div>
+                        <input type="text" id="number2" name="number2" style="padding:10px; border:2px solid #14d2d5;">
                     </td>
                     <td>
                         <div style="font-size: 45px; font-weight: bold;">=</div>
                     </td>
                     <td>
-                        <input type="text" style="padding:10px; border:2px solid #14d2d5;"></input>
+                        <input type="text" id="check" style="padding:10px; border:2px solid #14d2d5;"></input>
                     </td>
                     <td>
                         <input id="btn" type="button" value="check"></input>

@@ -1,43 +1,29 @@
-var number1;
-var number2;
+const numberinput1 = document.getElementById("number1");
+const numberinput2 = document.getElementById("number2");
+const answerinput = document.getElementById("check");
+const randomizebutton1 = document.getElementById("randomizebutton1");
+const randomizebutton2 = document.getElementById("randomizebutton2");
+const checkbutton = document.getElementById("btn");
 
-document.getElementById("number1").innerHTML = number1;
-document.getElementById("number2").innerHTML = number2;
-
-var answer = number1 + number2;
-var checkAnswer = document.querySelector('input[type=text]');
-var value = checkAnswer.value;
-var btn = document.querySelector('input[type=button][value=check]');
-var btn1 = document.querySelector('input[type=button][value=wylosuj pierwsze]');
-var btn2 = document.querySelector('input[type=button][value=wylosuj drugie]');
-
-btn1.onclick = function(){
-    number1 = Math.floor((Math.random()* 10) +1);
-     
+randomizebutton1.onclick = function () {
+    numberinput1.value = Math.floor((Math.random() * 101)+1);
 }
 
-btn2.onclick = function(){
-    number2 = Math.floor((Math.random()* 10) +1);
-    
+randomizebutton2.onclick = function () {
+    numberinput2.value = Math.floor((Math.random() * 101)+1);
 }
 
-btn.onclick = function(){
-    value = checkAnswer.value;
-    if (value== answer)
+checkbutton.onclick = function () {
+    const number1 = parseInt(numberinput1.value)
+    const number2 = parseInt(numberinput2.value)
+    const expectedanswer = number1 + number2;
+    const actualanswer = parseInt(answerinput.value)
+    if (actualanswer == expectedanswer)
     {
-        alert("you are right");
-    
+        alert ("you are right! genius")
     }
     else {
-        alert ('dummy, it was' + answer)
+        alert ("dummy, it was " + expectedanswer)
     }
 }
 
-document.querySelector('input[type=text]').value="";
-document.getElementById('number1').innerHTML="";
-document.getElementById('number2').innerHTML="";
-number1 = Math.floor((Math.random()* 10) +1);
-number2 = Math.floor((Math.random()* 10) +1);
-document.getElementById("number1").innerHTML = number1;
-document.getElementById("number2").innerHTML = number2;
-answer= number1 + number2;
