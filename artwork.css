@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-*
-{
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,8 +12,17 @@ body
 {
     min-height: 200vh;
     background: linear-gradient(#660066, #00cc66, #33ccff);
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    padding-bottom: 3rem;
   
 }
+
+img
+{
+    display:block;
+}
+
 
 header 
 {
@@ -64,9 +75,118 @@ header ul li a:hover
 }
 
 
-.artwork-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(12, 1fr);
+
+.container 
+{
+    max-width: 93.5rem;
+    margin-top: 100px; 
+    padding: 0 2rem;
 }
 
+.visually-hidden
+{
+    position: absolute;
+    height: 1px;
+    widows: 1px;
+    overflow: hidden;
+    clip: rect(1px,1px,1px,1px)
+}
+
+.profile
+{
+    padding: 5rem 0;
+}
+
+.profile::after 
+{
+    content: "";
+    display:block;
+    clear:bothl
+}
+
+.profile-image 
+{
+    float: left;
+    width: calc(33.333% - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.profile-user
+{
+    display:inline-block;
+    color: #fff;
+    font-weight: 1500;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.insta
+{
+    float:left;
+    margin: 3rem;
+}
+.profile-status
+{
+    
+    color: #fff;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.profile-image img {
+    border-radius: 20%;
+    margin-right: 3rem;
+}
+
+.gallery
+{
+    margin-top:200px;
+    display:flex;
+    flex-wrap: wrap;
+    padding-bottom: 6rem;
+}
+
+
+
+@supports (display: grid) 
+{
+.gallery
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+   grid-template-rows: repeat(3, auto);
+   grid-column-gap: 3rem;
+   grid-row-gap: 3rem;
+   align-items: center;
+   width: auto;
+ 
+}
+
+.gallery-item
+{
+    position:relative;
+    flex: 1 0 22rem;
+    margin: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info{
+display: flex;
+justify-content: center;
+position: absolute;
+top:0;
+width:100%;
+height: 100%;
+background-color: rgba(0,0,0,.3);
+}
