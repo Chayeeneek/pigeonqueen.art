@@ -210,10 +210,9 @@ background-color: rgba(0,0,0,.3);
 
 .gallery-image
 {
-    max-width: 35vw;
+    max-width: 32vw;
     max-height: 100%;
     object-fit: cover;
-    
     top: 1rem;
     right: 1rem;
 }
