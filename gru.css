@@ -88,6 +88,12 @@ width:100px;
     width: 30vw;
 }
 
+.box
+{
+    margin-top:15px;
+    margin-bottom:1px;
+}
+
 .container
 {
    
@@ -97,7 +103,7 @@ width:100px;
     width:70vw;
     margin: 50px;
     margin-top: 100px;
-    
+   
 }
 .section img
     {
