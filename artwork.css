@@ -20,6 +20,7 @@ body
 
 img
 {
+    
     display:block;
 }
 .background img
@@ -29,6 +30,7 @@ img
         left: 0;
         width: 100vw;
         height: 100%;
+
         object-fit: cover;
     }
     
