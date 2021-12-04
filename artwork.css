@@ -216,7 +216,7 @@ background-color: rgba(0,0,0,.3);
 
 .gallery-image
 {
-    max-width: 25vh;
+    max-width: 25vw;
     max-height: 100%;
     object-fit: cover;
     top: 1rem;
