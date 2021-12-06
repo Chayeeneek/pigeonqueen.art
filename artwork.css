@@ -33,6 +33,7 @@ body
     #stars {
         position: fixed;
         top: 0;
+        z-index: -1;
     }
 
     img
@@ -50,7 +51,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
+    
    
     
 }
@@ -128,6 +129,7 @@ header ul li a:hover
     justify-content: center;
     align-items: center;
     margin-right: 4rem;
+    z-index: 1000;
 }
 
 .profile-user
